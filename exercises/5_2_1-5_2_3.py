@@ -20,8 +20,3 @@ print(returns.loc[returns["AAPL"] > 0.01])
 print(returns.loc[returns["NVDA"] < 0,["AAPL", "NVDA"]])
 
 clean_returns = returns.drop(columns = ["MSFT"],index = ["Fri"])
-
-a = returns.reindex(["Mon", "Wed", "Fri1"])
-print(a)
-b = returns.loc[["Mon", "Wed", "Fri1"]]
-print(b)
